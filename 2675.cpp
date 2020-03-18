@@ -1,22 +1,27 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
-	int t,r;
-	string s;
+	string num1,num2;
 	
-	cin >> t;
+	cin >> num1 >> num2;
 	
-	for(int i = 0; i < t; i++)
-	{
-		cin >> r >> s;
-		for(int j = 0; j < r; j++)
-		{
-			for(int k = 0; k < )
-		}
-		cout << endl;
-	}
+	reverse(num1.begin(),num1.end());
+	reverse(num2.begin(),num2.end());
+	
+	int a = atoi(num1.c_str());
+	int b = atoi(num2.c_str());
+	
+	int max = 0;
+	
+	if(a > b)
+		max = a;
+	else
+		max = b;
+		
+	cout << max;
 }
